@@ -7,5 +7,7 @@ module.exports = {
         sans: ['Inter', 'sans-serif'],
       },
   },
-  plugins: [],
+  plugins: [
+      require('tailwind-scrollbar')
+  ],
 }

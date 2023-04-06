@@ -101,6 +101,31 @@ query get_ANIME_BY_ID ($id: Int){
       status
       episodes
       updatedAt
+      description
+      format
+      genres
+      season
+      seasonYear
+      seasonInt
+      episodes
+      duration
+      chapters
+      countryOfOrigin
+      trailer{
+        id
+        site
+        thumbnail
+      }
+      startDate{
+        year
+        month
+        day
+      }
+      endDate{
+        year
+        month
+        day
+      }
       nextAiringEpisode{
         airingAt
         episode
@@ -112,7 +137,15 @@ query get_ANIME_BY_ID ($id: Int){
         extraLarge
       }
       bannerImage
+      trending
+      favourites
       meanScore
+      streamingEpisodes{
+        title
+        thumbnail
+        url
+        site
+      }
   }
 }`;
 
